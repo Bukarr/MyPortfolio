@@ -1,0 +1,41 @@
+  .cursor {
+    display: inline-block;
+    animation: blink 0.7s infinite;
+    font-weight: bold;
+  }
+  #typed-text {
+  color: black;
+}
+
+  @keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+  }
+  #btn1{
+    background-color: forestgreen;
+    color: white;
+  }
+    #btn1:hover{
+        background-color: white;
+        color: forestgreen;
+        border: 2px solid forestgreen;
+    }
+    #btn2{
+        background-color: white;
+        color: forestgreen;
+        border: 2px solid forestgreen;
+    }
+    #btn2:hover{
+        background-color: forestgreen;
+        color: white;
+    }
+    .project-card {
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .project-card:hover {
+      transform: scale(1.02);
+    }
+    .project-details {
+      display: none;
+    }
