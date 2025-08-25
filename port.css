@@ -1,33 +1,41 @@
-body{
-    background-color: rgb(0, 12, 9); 
-}
-.display-6, .navbar, .h1{
-    font-family: "PT Serif Caption", serif;
-    font-weight: 400;
-    font-style: normal;
+  .cursor {
+    display: inline-block;
+    animation: blink 0.7s infinite;
+    font-weight: bold;
   }
-  
-  . {
-    font-family: "PT Serif Caption", serif;
-    font-weight: 400;
-    font-style: italic;
-  }  
-.navbar{
-    background-color: rgb(241, 164, 76);
+  #typed-text {
+  color: black;
 }
-.container{
-    background-color: rgb(0, 12, 9);
-}
-#container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card{
-    background-color: rgb(0, 14, 10);
-    box-shadow: 0 0 40px;
-}
-#button{
-    
-    background-color: rgb(240, 146, 40);
-}
+
+  @keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+  }
+  #btn1{
+    background-color: forestgreen;
+    color: white;
+  }
+    #btn1:hover{
+        background-color: white;
+        color: forestgreen;
+        border: 2px solid forestgreen;
+    }
+    #btn2{
+        background-color: white;
+        color: forestgreen;
+        border: 2px solid forestgreen;
+    }
+    #btn2:hover{
+        background-color: forestgreen;
+        color: white;
+    }
+    .project-card {
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .project-card:hover {
+      transform: scale(1.02);
+    }
+    .project-details {
+      display: none;
+    }
